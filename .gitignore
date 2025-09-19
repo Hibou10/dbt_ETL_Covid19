@@ -1,0 +1,6 @@
+
+.env
+*.yml
+*.yaml
+logs/
+node_modules/

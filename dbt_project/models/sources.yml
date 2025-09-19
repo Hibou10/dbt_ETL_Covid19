@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: covid_db
+    schema: raw_data
+    tables:
+      - name: covid_raw

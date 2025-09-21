@@ -1,75 +1,677 @@
-[0m23:55:00.805990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264B958EBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264BA9E3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264BA9E3C50>]}
+[0m00:26:32.901400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DA8EEBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DBD5BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DBD5BC50>]}
 
 
-============================== 23:55:00.811610 | 193c67fb-d195-4544-9156-da69cb2ce4e5 ==============================
-[0m23:55:00.811610 [info ] [MainThread]: Running with dbt=1.10.11
-[0m23:55:00.812648 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt'}
-[0m23:55:00.844251 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\h.boulaayad\.dbt
-[0m23:57:01.359206 [debug] [MainThread]: Starter project path: C:\Users\h.boulaayad\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
-[0m23:57:01.399526 [info ] [MainThread]: 
-Your new dbt project "dbt_project" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m23:57:01.400521 [info ] [MainThread]: Setting up your profile.
-[0m00:04:14.542188 [info ] [MainThread]: Profile dbt_project written to C:\Users\h.boulaayad\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m00:04:14.543810 [debug] [MainThread]: Command `dbt init` succeeded at 00:04:14.543646 after 553.90 seconds
-[0m00:04:14.544174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264CC9D3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264BBB1C950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264CCA3D590>]}
-[0m00:04:14.544536 [debug] [MainThread]: Flushing usage events
-[0m00:04:15.056179 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m00:18:36.469779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B53F0EBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B5537BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B5537BC50>]}
-
-
-============================== 00:18:36.474916 | 8c623120-eafc-44c4-8c2a-f8ce93bb9ced ==============================
-[0m00:18:36.474916 [info ] [MainThread]: Running with dbt=1.10.11
-[0m00:18:36.475519 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt'}
-[0m00:18:36.475990 [error] [MainThread]: Encountered an error:
+============================== 00:26:32.907503 | 5453334d-3edf-45ac-bfb7-f8ba2fbb2acf ==============================
+[0m00:26:32.907503 [info ] [MainThread]: Running with dbt=1.10.11
+[0m00:26:32.908456 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\DBT_PROJECT\\dbt_project\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m00:26:36.504033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5453334d-3edf-45ac-bfb7-f8ba2fbb2acf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DAFDD350>]}
+[0m00:26:36.554813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5453334d-3edf-45ac-bfb7-f8ba2fbb2acf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EDD0EAD0>]}
+[0m00:26:36.556508 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m00:26:37.092803 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m00:26:37.093849 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:26:37.094465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5453334d-3edf-45ac-bfb7-f8ba2fbb2acf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EDDAC550>]}
+[0m00:26:39.359763 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+[0m00:26:39.367900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5453334d-3edf-45ac-bfb7-f8ba2fbb2acf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EE1D16D0>]}
+[0m00:26:39.428123 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:26:39.450661 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:26:39.511455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5453334d-3edf-45ac-bfb7-f8ba2fbb2acf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EE5018D0>]}
+[0m00:26:39.512180 [info ] [MainThread]: Found 2 models, 1 source, 479 macros
+[0m00:26:39.513043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5453334d-3edf-45ac-bfb7-f8ba2fbb2acf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EE28BC70>]}
+[0m00:26:39.515218 [info ] [MainThread]: 
+[0m00:26:39.516330 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:26:39.516970 [info ] [MainThread]: 
+[0m00:26:39.517821 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:26:39.521873 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB'
+[0m00:26:42.865537 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB"
+[0m00:26:42.865887 [debug] [ThreadPool]: On list_COVID_DB: show terse schemas in database COVID_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB"} */
+[0m00:26:42.866134 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:26:59.413898 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database COVID_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB"} */
+[0m00:26:59.414701 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m00:26:59.415262 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m00:26:59.415609 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m00:26:59.416552 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:26:59.416825 [debug] [MainThread]: Connection 'list_COVID_DB' was left open.
+[0m00:26:59.417057 [debug] [MainThread]: On list_COVID_DB: No close available on handle
+[0m00:26:59.417304 [info ] [MainThread]: 
+[0m00:26:59.417894 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 19.90 seconds (19.90s).
+[0m00:26:59.418684 [error] [MainThread]: Encountered an error:
 Runtime Error
-  No dbt_project.yml found at expected path C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\dbt_Project\dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  Database error while listing schemas in database "COVID_DB"
+  Database Error
+    250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+[0m00:26:59.420043 [debug] [MainThread]: Command `dbt run` failed at 00:26:59.419926 after 26.65 seconds
+[0m00:26:59.420356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DBB16ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EE5D90D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198EEF0C3C0>]}
+[0m00:26:59.420656 [debug] [MainThread]: Flushing usage events
+[0m00:26:59.872192 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:29:06.623400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002974E42ABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002974F883ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002974F883C50>]}
+
+
+============================== 00:29:06.628396 | b524685a-fac1-4cc9-ba2f-bf91e6f6a56b ==============================
+[0m00:29:06.628396 [info ] [MainThread]: Running with dbt=1.10.11
+[0m00:29:06.629097 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\DBT_PROJECT\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m00:29:06.661395 [info ] [MainThread]: dbt version: 1.10.11
+[0m00:29:06.662008 [info ] [MainThread]: python version: 3.13.2
+[0m00:29:06.662493 [info ] [MainThread]: python path: C:\Users\h.boulaayad\AppData\Local\Programs\Python\Python313\python.exe
+[0m00:29:06.662954 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m00:29:07.773712 [info ] [MainThread]: Using profiles dir at C:\Users\h.boulaayad\.dbt
+[0m00:29:07.774325 [info ] [MainThread]: Using profiles.yml file at C:\Users\h.boulaayad\.dbt\profiles.yml
+[0m00:29:07.774719 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\dbt_project.yml
+[0m00:29:07.776021 [info ] [MainThread]: adapter type: snowflake
+[0m00:29:07.776427 [info ] [MainThread]: adapter version: 1.10.2
+[0m00:29:07.873238 [info ] [MainThread]: Configuration:
+[0m00:29:07.873926 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:29:07.874396 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:29:07.874846 [info ] [MainThread]: Required dependencies:
+[0m00:29:07.875431 [debug] [MainThread]: Executing "git --help"
+[0m00:29:07.962183 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:29:07.962658 [debug] [MainThread]: STDERR: "b''"
+[0m00:29:07.962994 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:29:07.963515 [info ] [MainThread]: Connection:
+[0m00:29:07.963964 [info ] [MainThread]:   account: we07764.eu-central-1
+[0m00:29:07.964410 [info ] [MainThread]:   user:     user="HICHAMBOU",
+[0m00:29:07.964852 [info ] [MainThread]:   database: COVID_DB
+[0m00:29:07.965343 [info ] [MainThread]:   warehouse: DBT_WH
+[0m00:29:07.965943 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m00:29:07.966494 [info ] [MainThread]:   schema: dbt_analytics
+[0m00:29:07.967078 [info ] [MainThread]:   authenticator: None
+[0m00:29:07.967645 [info ] [MainThread]:   oauth_client_id: None
+[0m00:29:07.968406 [info ] [MainThread]:   query_tag: None
+[0m00:29:07.968967 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:29:07.969611 [info ] [MainThread]:   host: None
+[0m00:29:07.970067 [info ] [MainThread]:   port: None
+[0m00:29:07.970505 [info ] [MainThread]:   proxy_host: None
+[0m00:29:07.972497 [info ] [MainThread]:   proxy_port: None
+[0m00:29:07.973277 [info ] [MainThread]:   protocol: None
+[0m00:29:07.973849 [info ] [MainThread]:   connect_retries: 1
+[0m00:29:07.974455 [info ] [MainThread]:   connect_timeout: None
+[0m00:29:07.975056 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:29:07.975689 [info ] [MainThread]:   retry_all: False
+[0m00:29:07.976203 [info ] [MainThread]:   insecure_mode: False
+[0m00:29:07.976752 [info ] [MainThread]:   reuse_connections: True
+[0m00:29:07.977080 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:29:07.977680 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m00:29:08.392555 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:29:08.466046 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:29:08.466382 [debug] [MainThread]: On debug: select 1 as id
+[0m00:29:08.466613 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:29:11.438487 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m00:29:11.438924 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m00:29:11.439320 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:29:11.439933 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:29:11.440592 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  250001 (08001): Failed to connect to DB: we07764.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:29:11.441953 [debug] [MainThread]: Command `dbt debug` failed at 00:29:11.441848 after 4.96 seconds
+[0m00:29:11.442237 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:29:11.442547 [debug] [MainThread]: On debug: No close available on handle
+[0m00:29:11.442893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029761A1B5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029761ED1370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000297618DDAE0>]}
+[0m00:29:11.443268 [debug] [MainThread]: Flushing usage events
+[0m00:29:11.914423 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:30:19.125000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247ECD8EBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247EE1D3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247EE1D3C50>]}
+
+
+============================== 00:30:19.130951 | ace25555-b3d6-4611-8e6a-a64338fec231 ==============================
+[0m00:30:19.130951 [info ] [MainThread]: Running with dbt=1.10.11
+[0m00:30:19.132679 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\DBT_PROJECT\\dbt_project\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m00:30:19.171134 [info ] [MainThread]: dbt version: 1.10.11
+[0m00:30:19.171772 [info ] [MainThread]: python version: 3.13.2
+[0m00:30:19.172310 [info ] [MainThread]: python path: C:\Users\h.boulaayad\AppData\Local\Programs\Python\Python313\python.exe
+[0m00:30:19.172759 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m00:30:20.526404 [info ] [MainThread]: Using profiles dir at C:\Users\h.boulaayad\.dbt
+[0m00:30:20.527064 [info ] [MainThread]: Using profiles.yml file at C:\Users\h.boulaayad\.dbt\profiles.yml
+[0m00:30:20.527477 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\dbt_project.yml
+[0m00:30:20.528765 [info ] [MainThread]: adapter type: snowflake
+[0m00:30:20.529145 [info ] [MainThread]: adapter version: 1.10.2
+[0m00:30:20.623991 [info ] [MainThread]: Configuration:
+[0m00:30:20.624691 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:30:20.625177 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:30:20.625647 [info ] [MainThread]: Required dependencies:
+[0m00:30:20.626124 [debug] [MainThread]: Executing "git --help"
+[0m00:30:20.705762 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:30:20.706174 [debug] [MainThread]: STDERR: "b''"
+[0m00:30:20.706528 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:30:20.707081 [info ] [MainThread]: Connection:
+[0m00:30:20.707644 [info ] [MainThread]:   account: we07764.eu-central-1
+[0m00:30:20.708158 [info ] [MainThread]:   user: HICHAMBOU
+[0m00:30:20.708666 [info ] [MainThread]:   database: COVID_DB
+[0m00:30:20.709289 [info ] [MainThread]:   warehouse: DBT_WH
+[0m00:30:20.709954 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m00:30:20.710651 [info ] [MainThread]:   schema: dbt_analytics
+[0m00:30:20.711218 [info ] [MainThread]:   authenticator: None
+[0m00:30:20.711766 [info ] [MainThread]:   oauth_client_id: None
+[0m00:30:20.712421 [info ] [MainThread]:   query_tag: None
+[0m00:30:20.713225 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:30:20.713966 [info ] [MainThread]:   host: None
+[0m00:30:20.714484 [info ] [MainThread]:   port: None
+[0m00:30:20.715054 [info ] [MainThread]:   proxy_host: None
+[0m00:30:20.715633 [info ] [MainThread]:   proxy_port: None
+[0m00:30:20.716123 [info ] [MainThread]:   protocol: None
+[0m00:30:20.716773 [info ] [MainThread]:   connect_retries: 1
+[0m00:30:20.717743 [info ] [MainThread]:   connect_timeout: None
+[0m00:30:20.718864 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:30:20.719804 [info ] [MainThread]:   retry_all: False
+[0m00:30:20.720749 [info ] [MainThread]:   insecure_mode: False
+[0m00:30:20.721427 [info ] [MainThread]:   reuse_connections: True
+[0m00:30:20.722657 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:30:20.724680 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m00:30:21.149023 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:30:21.221432 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:30:21.221770 [debug] [MainThread]: On debug: select 1 as id
+[0m00:30:21.221999 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:30:24.082189 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.860 seconds
+[0m00:30:24.083167 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:30:24.083807 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:30:24.085127 [debug] [MainThread]: Command `dbt debug` succeeded at 00:30:24.084997 after 5.13 seconds
+[0m00:30:24.085416 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:30:24.085674 [debug] [MainThread]: On debug: Close
+[0m00:30:24.179986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002478038B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024780841B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024780251BF0>]}
+[0m00:30:24.180519 [debug] [MainThread]: Flushing usage events
+[0m00:30:24.617106 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:31:36.085480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FDD5BABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FDEA1BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FDEA1BC50>]}
+
+
+============================== 00:31:36.091419 | c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9 ==============================
+[0m00:31:36.091419 [info ] [MainThread]: Running with dbt=1.10.11
+[0m00:31:36.092287 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\DBT_PROJECT\\dbt_project\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt'}
+[0m00:31:37.333178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FDDCA9350>]}
+[0m00:31:37.389691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF099EAD0>]}
+[0m00:31:37.391390 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m00:31:37.780586 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m00:31:37.874877 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m00:31:37.875595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF0A3D050>]}
+[0m00:31:38.852845 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+[0m00:31:38.860905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF09C6B70>]}
+[0m00:31:38.925978 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:31:38.928816 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:31:38.970956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF10D9B70>]}
+[0m00:31:38.971983 [info ] [MainThread]: Found 2 models, 1 source, 479 macros
+[0m00:31:38.972688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF0EA7C70>]}
+[0m00:31:38.974795 [info ] [MainThread]: 
+[0m00:31:38.975544 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:31:38.976087 [info ] [MainThread]: 
+[0m00:31:38.977060 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:31:38.982745 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB'
+[0m00:31:39.073450 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB"
+[0m00:31:39.073802 [debug] [ThreadPool]: On list_COVID_DB: show terse schemas in database COVID_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB"} */
+[0m00:31:39.074040 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:31:41.820432 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2.746 seconds
+[0m00:31:41.823661 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_COVID_DB, now create_COVID_DB_dbt_analytics)
+[0m00:31:41.824181 [debug] [ThreadPool]: Creating schema "database: "COVID_DB"
+schema: "dbt_analytics"
+"
+[0m00:31:41.828013 [debug] [ThreadPool]: Using snowflake connection "create_COVID_DB_dbt_analytics"
+[0m00:31:41.828325 [debug] [ThreadPool]: On create_COVID_DB_dbt_analytics: create schema if not exists COVID_DB.dbt_analytics
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_COVID_DB_dbt_analytics"} */
+[0m00:31:41.934308 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.106 seconds
+[0m00:31:41.936873 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB_dbt_analytics'
+[0m00:31:41.948208 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB_dbt_analytics"
+[0m00:31:41.948563 [debug] [ThreadPool]: On list_COVID_DB_dbt_analytics: show objects in COVID_DB.dbt_analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB_dbt_analytics"} */;
+[0m00:31:41.948793 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:31:44.327182 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.378 seconds
+[0m00:31:44.329094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF1688DD0>]}
+[0m00:31:44.379693 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_covid_raw
+[0m00:31:44.381114 [info ] [Thread-1 (]: 1 of 2 START sql view model dbt_analytics.stg_covid_raw ........................ [RUN]
+[0m00:31:44.381984 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_project.stg_covid_raw'
+[0m00:31:44.382308 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_covid_raw
+[0m00:31:44.390525 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_covid_raw"
+[0m00:31:44.393772 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_covid_raw
+[0m00:31:44.426320 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_covid_raw"
+[0m00:31:44.432923 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project.stg_covid_raw"
+[0m00:31:44.434030 [debug] [Thread-1 (]: On model.dbt_project.stg_covid_raw: create or replace   view COVID_DB.dbt_analytics.stg_covid_raw
   
-[0m00:18:36.476974 [debug] [MainThread]: Command `dbt run` failed at 00:18:36.476868 after 0.15 seconds
-[0m00:18:36.477272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B55391A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B553F84D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B551E7570>]}
-[0m00:18:36.477574 [debug] [MainThread]: Flushing usage events
-[0m00:18:36.942333 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m00:21:24.145438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE8803EBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE8949BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE8949BC50>]}
-
-
-============================== 00:21:24.151056 | 0be030d1-8ad6-40cb-ac95-fbd69630bda4 ==============================
-[0m00:21:24.151056 [info ] [MainThread]: Running with dbt=1.10.11
-[0m00:21:24.151754 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'False', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
-[0m00:21:24.152180 [error] [MainThread]: Encountered an error:
-Runtime Error
-  No dbt_project.yml found at expected path C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
   
-[0m00:21:24.153378 [debug] [MainThread]: Command `dbt run` failed at 00:21:24.153270 after 0.16 seconds
-[0m00:21:24.153667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE894B5A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE895184D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE89307570>]}
-[0m00:21:24.153952 [debug] [MainThread]: Flushing usage events
-[0m00:21:24.586220 [debug] [MainThread]: An error was encountered while trying to flush usage events
-[0m00:32:05.542132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A24BCEBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A2602BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A2602BC50>]}
-
-
-============================== 00:32:05.547462 | 0f359be3-133c-4f98-bcbd-cd5784dc844d ==============================
-[0m00:32:05.547462 [info ] [MainThread]: Running with dbt=1.10.11
-[0m00:32:05.548360 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
-[0m00:32:05.548796 [error] [MainThread]: Encountered an error:
-Runtime Error
-  No dbt_project.yml found at expected path C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project.yml
-  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
   
-[0m00:32:05.550044 [debug] [MainThread]: Command `dbt run` failed at 00:32:05.549939 after 0.13 seconds
-[0m00:32:05.550323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A26041A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A260A84D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A25E93570>]}
-[0m00:32:05.550603 [debug] [MainThread]: Flushing usage events
-[0m00:32:06.058418 [debug] [MainThread]: An error was encountered while trying to flush usage events
+  
+  as (
+    SELECT
+    country,
+    cases,
+    deaths,
+    tests,
+    population,
+    todaycases,
+    todaydeaths,
+    ROUND(cases / NULLIF(population,0) * 1000000, 2) AS cases_per_million,
+    ROUND(deaths / NULLIF(population,0) * 1000000, 2) AS deaths_per_million,
+    ROUND(tests / NULLIF(population,0) * 1000, 2) AS tests_per_thousand
+FROM covid_db.raw_data.covid_raw
+WHERE population > 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_covid_raw"} */;
+[0m00:31:44.434715 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:31:46.871218 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bf2a07-0205-30b5-0003-f77e0001b346
+[0m00:31:46.871641 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 20 at position 145 unexpected ';'.
+[0m00:31:46.902744 [debug] [Thread-1 (]: Database Error in model stg_covid_raw (models\staging\stg_covid_raw.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 20 at position 145 unexpected ';'.
+  compiled code at target\run\dbt_project\models\staging\stg_covid_raw.sql
+[0m00:31:46.905183 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8d9fc70-2e0e-42ea-ab0d-c025ec17ecf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF247D860>]}
+[0m00:31:46.905809 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model dbt_analytics.stg_covid_raw ............... [[31mERROR[0m in 2.52s]
+[0m00:31:46.906718 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_covid_raw
+[0m00:31:46.907290 [debug] [Thread-4 (]: Marking all children of 'model.dbt_project.stg_covid_raw' to be skipped because of status 'error'.  Reason: Database Error in model stg_covid_raw (models\staging\stg_covid_raw.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 20 at position 145 unexpected ';'.
+  compiled code at target\run\dbt_project\models\staging\stg_covid_raw.sql.
+[0m00:31:46.908599 [debug] [Thread-1 (]: Began running node model.dbt_project.vaccinations_vs_outcomes
+[0m00:31:46.908932 [info ] [Thread-1 (]: 2 of 2 SKIP relation dbt_analytics.vaccinations_vs_outcomes .................... [[33mSKIP[0m]
+[0m00:31:46.909659 [debug] [Thread-1 (]: Finished running node model.dbt_project.vaccinations_vs_outcomes
+[0m00:31:46.910998 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:31:46.911253 [debug] [MainThread]: Connection 'create_COVID_DB_dbt_analytics' was left open.
+[0m00:31:46.911478 [debug] [MainThread]: On create_COVID_DB_dbt_analytics: Close
+[0m00:31:46.996420 [debug] [MainThread]: Connection 'list_COVID_DB_dbt_analytics' was left open.
+[0m00:31:46.997179 [debug] [MainThread]: On list_COVID_DB_dbt_analytics: Close
+[0m00:31:47.083598 [debug] [MainThread]: Connection 'model.dbt_project.stg_covid_raw' was left open.
+[0m00:31:47.084183 [debug] [MainThread]: On model.dbt_project.stg_covid_raw: Close
+[0m00:31:47.144723 [info ] [MainThread]: 
+[0m00:31:47.147118 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 8.17 seconds (8.17s).
+[0m00:31:47.148573 [debug] [MainThread]: Command end result
+[0m00:31:47.173068 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:31:47.175978 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:31:47.183591 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\run_results.json
+[0m00:31:47.184936 [info ] [MainThread]: 
+[0m00:31:47.185635 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:31:47.186255 [info ] [MainThread]: 
+[0m00:31:47.186852 [error] [MainThread]: [31mFailure in model stg_covid_raw (models\staging\stg_covid_raw.sql)[0m
+[0m00:31:47.187514 [error] [MainThread]:   Database Error in model stg_covid_raw (models\staging\stg_covid_raw.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 20 at position 145 unexpected ';'.
+  compiled code at target\run\dbt_project\models\staging\stg_covid_raw.sql
+[0m00:31:47.188076 [info ] [MainThread]: 
+[0m00:31:47.188675 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\stg_covid_raw.sql
+[0m00:31:47.189218 [info ] [MainThread]: 
+[0m00:31:47.189813 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m00:31:47.191144 [debug] [MainThread]: Command `dbt run` failed at 00:31:47.191009 after 11.24 seconds
+[0m00:31:47.191520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF25053B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FF244DEB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020FDDC47750>]}
+[0m00:31:47.191860 [debug] [MainThread]: Flushing usage events
+[0m00:31:47.642983 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:32:19.808987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180742DEBA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001807572BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001807572BC50>]}
+
+
+============================== 00:32:19.814118 | 7dbcf27b-8493-4cb9-9263-8307afc050c8 ==============================
+[0m00:32:19.814118 [info ] [MainThread]: Running with dbt=1.10.11
+[0m00:32:19.814919 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\DBT_PROJECT\\dbt_project\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt'}
+[0m00:32:21.053618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180749B9350>]}
+[0m00:32:21.107559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001800677EAD0>]}
+[0m00:32:21.109711 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m00:32:21.525740 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m00:32:21.680641 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:32:21.681016 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:32:21.685730 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+[0m00:32:21.710662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180077EE850>]}
+[0m00:32:21.778854 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:32:21.781690 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:32:21.820925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180755DA210>]}
+[0m00:32:21.821651 [info ] [MainThread]: Found 2 models, 1 source, 479 macros
+[0m00:32:21.822429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018007D70C90>]}
+[0m00:32:21.824335 [info ] [MainThread]: 
+[0m00:32:21.824928 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:32:21.825459 [info ] [MainThread]: 
+[0m00:32:21.826178 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:32:21.830303 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB'
+[0m00:32:21.923279 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB"
+[0m00:32:21.923621 [debug] [ThreadPool]: On list_COVID_DB: show terse schemas in database COVID_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB"} */
+[0m00:32:21.923873 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:32:24.540853 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.617 seconds
+[0m00:32:24.543384 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB_dbt_analytics'
+[0m00:32:24.554411 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB_dbt_analytics"
+[0m00:32:24.554982 [debug] [ThreadPool]: On list_COVID_DB_dbt_analytics: show objects in COVID_DB.dbt_analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB_dbt_analytics"} */;
+[0m00:32:24.555267 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:32:26.849601 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.294 seconds
+[0m00:32:26.852902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018008820BB0>]}
+[0m00:32:26.859300 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_covid_raw
+[0m00:32:26.859805 [info ] [Thread-1 (]: 1 of 2 START sql view model dbt_analytics.stg_covid_raw ........................ [RUN]
+[0m00:32:26.860684 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_project.stg_covid_raw'
+[0m00:32:26.861000 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_covid_raw
+[0m00:32:26.866687 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_covid_raw"
+[0m00:32:26.868146 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_covid_raw
+[0m00:32:26.899720 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_covid_raw"
+[0m00:32:26.901560 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project.stg_covid_raw"
+[0m00:32:26.902226 [debug] [Thread-1 (]: On model.dbt_project.stg_covid_raw: create or replace   view COVID_DB.dbt_analytics.stg_covid_raw
+  
+  
+  
+  
+  as (
+    SELECT
+    country,
+    cases,
+    deaths,
+    tests,
+    population,
+    todaycases,
+    todaydeaths,
+    ROUND(cases / NULLIF(population,0) * 1000000, 2) AS cases_per_million,
+    ROUND(deaths / NULLIF(population,0) * 1000000, 2) AS deaths_per_million,
+    ROUND(tests / NULLIF(population,0) * 1000, 2) AS tests_per_thousand
+FROM covid_db.raw_data.covid_raw
+WHERE population > 0
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_covid_raw"} */;
+[0m00:32:26.902584 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:32:29.484649 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bf2a08-0205-3410-0003-f77e0002522e
+[0m00:32:29.485041 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 20 at position 145 unexpected ';'.
+[0m00:32:29.490841 [debug] [Thread-1 (]: Database Error in model stg_covid_raw (models\staging\stg_covid_raw.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 20 at position 145 unexpected ';'.
+  compiled code at target\run\dbt_project\models\staging\stg_covid_raw.sql
+[0m00:32:29.493080 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7dbcf27b-8493-4cb9-9263-8307afc050c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018008FD9190>]}
+[0m00:32:29.493776 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model dbt_analytics.stg_covid_raw ............... [[31mERROR[0m in 2.63s]
+[0m00:32:29.495060 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_covid_raw
+[0m00:32:29.497199 [debug] [Thread-4 (]: Marking all children of 'model.dbt_project.stg_covid_raw' to be skipped because of status 'error'.  Reason: Database Error in model stg_covid_raw (models\staging\stg_covid_raw.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 20 at position 145 unexpected ';'.
+  compiled code at target\run\dbt_project\models\staging\stg_covid_raw.sql.
+[0m00:32:29.498801 [debug] [Thread-1 (]: Began running node model.dbt_project.vaccinations_vs_outcomes
+[0m00:32:29.499389 [info ] [Thread-1 (]: 2 of 2 SKIP relation dbt_analytics.vaccinations_vs_outcomes .................... [[33mSKIP[0m]
+[0m00:32:29.500145 [debug] [Thread-1 (]: Finished running node model.dbt_project.vaccinations_vs_outcomes
+[0m00:32:29.502571 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:32:29.502958 [debug] [MainThread]: Connection 'list_COVID_DB' was left open.
+[0m00:32:29.503206 [debug] [MainThread]: On list_COVID_DB: Close
+[0m00:32:29.556421 [debug] [MainThread]: Connection 'list_COVID_DB_dbt_analytics' was left open.
+[0m00:32:29.556919 [debug] [MainThread]: On list_COVID_DB_dbt_analytics: Close
+[0m00:32:29.633222 [debug] [MainThread]: Connection 'model.dbt_project.stg_covid_raw' was left open.
+[0m00:32:29.633747 [debug] [MainThread]: On model.dbt_project.stg_covid_raw: Close
+[0m00:32:29.694975 [info ] [MainThread]: 
+[0m00:32:29.695998 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 7.87 seconds (7.87s).
+[0m00:32:29.698074 [debug] [MainThread]: Command end result
+[0m00:32:29.726203 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:32:29.732494 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:32:29.740689 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\run_results.json
+[0m00:32:29.741190 [info ] [MainThread]: 
+[0m00:32:29.741890 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:32:29.742388 [info ] [MainThread]: 
+[0m00:32:29.742912 [error] [MainThread]: [31mFailure in model stg_covid_raw (models\staging\stg_covid_raw.sql)[0m
+[0m00:32:29.743509 [error] [MainThread]:   Database Error in model stg_covid_raw (models\staging\stg_covid_raw.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 20 at position 145 unexpected ';'.
+  compiled code at target\run\dbt_project\models\staging\stg_covid_raw.sql
+[0m00:32:29.744064 [info ] [MainThread]: 
+[0m00:32:29.745182 [info ] [MainThread]:   compiled code at target\compiled\dbt_project\models\staging\stg_covid_raw.sql
+[0m00:32:29.746003 [info ] [MainThread]: 
+[0m00:32:29.748511 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m00:32:29.751272 [debug] [MainThread]: Command `dbt run` failed at 00:32:29.751092 after 10.07 seconds
+[0m00:32:29.751677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180088FD4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018009012990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018008F196D0>]}
+[0m00:32:29.752023 [debug] [MainThread]: Flushing usage events
+[0m00:32:30.194031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:34:30.449023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C26C4CABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C26D91BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C26D91BC50>]}
+
+
+============================== 00:34:30.454208 | 5351b731-ccdd-48fb-a3c0-5246dc58384b ==============================
+[0m00:34:30.454208 [info ] [MainThread]: Running with dbt=1.10.11
+[0m00:34:30.455314 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\DBT_PROJECT\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m00:34:31.678899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C26CBA9350>]}
+[0m00:34:31.736244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C27F88EAD0>]}
+[0m00:34:31.738117 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m00:34:32.136799 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m00:34:32.274948 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m00:34:32.275772 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\marts\covid\vaccinations_vs_outcomes.sql
+[0m00:34:32.276230 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models\staging\stg_covid_raw.sql
+[0m00:34:32.488885 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+[0m00:34:32.499890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C27F92E750>]}
+[0m00:34:32.569384 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:34:32.572356 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:34:32.608298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C26D7CA210>]}
+[0m00:34:32.609217 [info ] [MainThread]: Found 2 models, 1 source, 479 macros
+[0m00:34:32.609937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C27F9F9B70>]}
+[0m00:34:32.612531 [info ] [MainThread]: 
+[0m00:34:32.613178 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:34:32.613519 [info ] [MainThread]: 
+[0m00:34:32.613979 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:34:32.617963 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB'
+[0m00:34:32.706447 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB"
+[0m00:34:32.706795 [debug] [ThreadPool]: On list_COVID_DB: show terse schemas in database COVID_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB"} */
+[0m00:34:32.707036 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:34:35.339245 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.632 seconds
+[0m00:34:35.342054 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB_dbt_analytics'
+[0m00:34:35.353820 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB_dbt_analytics"
+[0m00:34:35.354384 [debug] [ThreadPool]: On list_COVID_DB_dbt_analytics: show objects in COVID_DB.dbt_analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB_dbt_analytics"} */;
+[0m00:34:35.354669 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:34:37.673592 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.319 seconds
+[0m00:34:37.677366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C200AB6DD0>]}
+[0m00:34:37.682636 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_covid_raw
+[0m00:34:37.683137 [info ] [Thread-1 (]: 1 of 2 START sql view model dbt_analytics.stg_covid_raw ........................ [RUN]
+[0m00:34:37.683886 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_project.stg_covid_raw'
+[0m00:34:37.684166 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_covid_raw
+[0m00:34:37.691097 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_covid_raw"
+[0m00:34:37.692405 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_covid_raw
+[0m00:34:37.719698 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_covid_raw"
+[0m00:34:37.722632 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project.stg_covid_raw"
+[0m00:34:37.723422 [debug] [Thread-1 (]: On model.dbt_project.stg_covid_raw: create or replace   view COVID_DB.dbt_analytics.stg_covid_raw
+  
+  
+  
+  
+  as (
+    SELECT
+    country,
+    cases,
+    deaths,
+    tests,
+    population,
+    todaycases,
+    todaydeaths,
+    ROUND(cases / NULLIF(population,0) * 1000000, 2) AS cases_per_million,
+    ROUND(deaths / NULLIF(population,0) * 1000000, 2) AS deaths_per_million,
+    ROUND(tests / NULLIF(population,0) * 1000, 2) AS tests_per_thousand
+FROM covid_db.raw_data.covid_raw
+WHERE population > 0
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_covid_raw"} */;
+[0m00:34:37.723764 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:34:40.200940 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.477 seconds
+[0m00:34:40.222428 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C27FDD2990>]}
+[0m00:34:40.223047 [info ] [Thread-1 (]: 1 of 2 OK created sql view model dbt_analytics.stg_covid_raw ................... [[32mSUCCESS 1[0m in 2.54s]
+[0m00:34:40.223966 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_covid_raw
+[0m00:34:40.225033 [debug] [Thread-1 (]: Began running node model.dbt_project.vaccinations_vs_outcomes
+[0m00:34:40.225623 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt_analytics.vaccinations_vs_outcomes ............. [RUN]
+[0m00:34:40.226579 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_covid_raw, now model.dbt_project.vaccinations_vs_outcomes)
+[0m00:34:40.227425 [debug] [Thread-1 (]: Began compiling node model.dbt_project.vaccinations_vs_outcomes
+[0m00:34:40.229937 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.vaccinations_vs_outcomes"
+[0m00:34:40.231926 [debug] [Thread-1 (]: Began executing node model.dbt_project.vaccinations_vs_outcomes
+[0m00:34:40.236043 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.vaccinations_vs_outcomes"
+[0m00:34:40.238588 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project.vaccinations_vs_outcomes"
+[0m00:34:40.239221 [debug] [Thread-1 (]: On model.dbt_project.vaccinations_vs_outcomes: create or replace   view COVID_DB.dbt_analytics.vaccinations_vs_outcomes
+  
+  
+  
+  
+  as (
+    SELECT
+    country,
+    cases_per_million,
+    deaths_per_million,
+    tests_per_thousand
+FROM COVID_DB.dbt_analytics.stg_covid_raw
+ORDER BY deaths_per_million DESC
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vaccinations_vs_outcomes"} */;
+[0m00:34:40.478933 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.239 seconds
+[0m00:34:40.480776 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5351b731-ccdd-48fb-a3c0-5246dc58384b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2012A9700>]}
+[0m00:34:40.481292 [info ] [Thread-1 (]: 2 of 2 OK created sql view model dbt_analytics.vaccinations_vs_outcomes ........ [[32mSUCCESS 1[0m in 0.25s]
+[0m00:34:40.482093 [debug] [Thread-1 (]: Finished running node model.dbt_project.vaccinations_vs_outcomes
+[0m00:34:40.483336 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:34:40.483606 [debug] [MainThread]: Connection 'list_COVID_DB' was left open.
+[0m00:34:40.483844 [debug] [MainThread]: On list_COVID_DB: Close
+[0m00:34:40.640454 [debug] [MainThread]: Connection 'list_COVID_DB_dbt_analytics' was left open.
+[0m00:34:40.641235 [debug] [MainThread]: On list_COVID_DB_dbt_analytics: Close
+[0m00:34:40.707888 [debug] [MainThread]: Connection 'model.dbt_project.vaccinations_vs_outcomes' was left open.
+[0m00:34:40.708598 [debug] [MainThread]: On model.dbt_project.vaccinations_vs_outcomes: Close
+[0m00:34:40.769205 [info ] [MainThread]: 
+[0m00:34:40.769854 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 8.16 seconds (8.16s).
+[0m00:34:40.770756 [debug] [MainThread]: Command end result
+[0m00:34:40.789874 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\manifest.json
+[0m00:34:40.792478 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\semantic_manifest.json
+[0m00:34:40.800126 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\DBT_PROJECT\dbt_project\target\run_results.json
+[0m00:34:40.800745 [info ] [MainThread]: 
+[0m00:34:40.801292 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:34:40.801782 [info ] [MainThread]: 
+[0m00:34:40.802301 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m00:34:40.803417 [debug] [MainThread]: Command `dbt run` succeeded at 00:34:40.803317 after 10.48 seconds
+[0m00:34:40.803883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C201254B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2012E2600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C200EC71D0>]}
+[0m00:34:40.804309 [debug] [MainThread]: Flushing usage events
+[0m00:34:41.213863 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:05:10.299358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002402AFDABA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002402C43BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002402C43BC50>]}
+
+
+============================== 12:05:10.309604 | 67bb437c-a9b1-42e6-a571-e21f63d5b73f ==============================
+[0m12:05:10.309604 [info ] [MainThread]: Running with dbt=1.10.11
+[0m12:05:10.311251 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\h.boulaayad\\Documents\\BachelorArbeit\\ETL_COVID19\\dbt_Project\\logs', 'profiles_dir': 'C:\\Users\\h.boulaayad\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m12:05:16.097815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002402B6CD350>]}
+[0m12:05:16.157868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403E3BEAD0>]}
+[0m12:05:16.159875 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m12:05:16.687704 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m12:05:18.778863 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:05:18.779548 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:05:18.786605 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_project.example
+[0m12:05:18.816197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403E45E850>]}
+[0m12:05:18.894033 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\dbt_Project\target\manifest.json
+[0m12:05:18.925266 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\dbt_Project\target\semantic_manifest.json
+[0m12:05:19.025516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002402C2EA210>]}
+[0m12:05:19.026325 [info ] [MainThread]: Found 2 models, 1 source, 479 macros
+[0m12:05:19.027049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403E9DCC90>]}
+[0m12:05:19.028888 [info ] [MainThread]: 
+[0m12:05:19.029430 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:05:19.029905 [info ] [MainThread]: 
+[0m12:05:19.030514 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:05:19.035001 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB'
+[0m12:05:23.514538 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB"
+[0m12:05:23.514964 [debug] [ThreadPool]: On list_COVID_DB: show terse schemas in database COVID_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB"} */
+[0m12:05:23.515359 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:05:28.174783 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 4.659 seconds
+[0m12:05:28.180300 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_COVID_DB_dbt_analytics'
+[0m12:05:28.190990 [debug] [ThreadPool]: Using snowflake connection "list_COVID_DB_dbt_analytics"
+[0m12:05:28.191435 [debug] [ThreadPool]: On list_COVID_DB_dbt_analytics: show objects in COVID_DB.dbt_analytics
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_COVID_DB_dbt_analytics"} */;
+[0m12:05:28.191687 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:05:30.739364 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.548 seconds
+[0m12:05:30.743365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403F3C4BB0>]}
+[0m12:05:30.761689 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_covid_raw
+[0m12:05:30.762190 [info ] [Thread-1 (]: 1 of 2 START sql view model dbt_analytics.stg_covid_raw ........................ [RUN]
+[0m12:05:30.763124 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.dbt_project.stg_covid_raw'
+[0m12:05:30.763410 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_covid_raw
+[0m12:05:30.770321 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_covid_raw"
+[0m12:05:30.771655 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_covid_raw
+[0m12:05:30.800192 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_covid_raw"
+[0m12:05:30.803644 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project.stg_covid_raw"
+[0m12:05:30.804499 [debug] [Thread-1 (]: On model.dbt_project.stg_covid_raw: create or replace   view COVID_DB.dbt_analytics.stg_covid_raw
+  
+  
+  
+  
+  as (
+    SELECT
+    country,
+    cases,
+    deaths,
+    tests,
+    population,
+    todaycases,
+    todaydeaths,
+    ROUND(cases / NULLIF(population,0) * 1000000, 2) AS cases_per_million,
+    ROUND(deaths / NULLIF(population,0) * 1000000, 2) AS deaths_per_million,
+    ROUND(tests / NULLIF(population,0) * 1000, 2) AS tests_per_thousand
+FROM covid_db.raw_data.covid_raw
+WHERE population > 0
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_covid_raw"} */;
+[0m12:05:30.804987 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:05:34.021791 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 3.217 seconds
+[0m12:05:34.052170 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403FB474D0>]}
+[0m12:05:34.052854 [info ] [Thread-1 (]: 1 of 2 OK created sql view model dbt_analytics.stg_covid_raw ................... [[32mSUCCESS 1[0m in 3.29s]
+[0m12:05:34.053726 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_covid_raw
+[0m12:05:34.054815 [debug] [Thread-1 (]: Began running node model.dbt_project.vaccinations_vs_outcomes
+[0m12:05:34.055343 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt_analytics.vaccinations_vs_outcomes ............. [RUN]
+[0m12:05:34.056209 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_covid_raw, now model.dbt_project.vaccinations_vs_outcomes)
+[0m12:05:34.056779 [debug] [Thread-1 (]: Began compiling node model.dbt_project.vaccinations_vs_outcomes
+[0m12:05:34.062509 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.vaccinations_vs_outcomes"
+[0m12:05:34.064765 [debug] [Thread-1 (]: Began executing node model.dbt_project.vaccinations_vs_outcomes
+[0m12:05:34.070000 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.vaccinations_vs_outcomes"
+[0m12:05:34.072396 [debug] [Thread-1 (]: Using snowflake connection "model.dbt_project.vaccinations_vs_outcomes"
+[0m12:05:34.073030 [debug] [Thread-1 (]: On model.dbt_project.vaccinations_vs_outcomes: create or replace   view COVID_DB.dbt_analytics.vaccinations_vs_outcomes
+  
+  
+  
+  
+  as (
+    SELECT
+    country,
+    cases_per_million,
+    deaths_per_million,
+    tests_per_thousand
+FROM COVID_DB.dbt_analytics.stg_covid_raw
+ORDER BY deaths_per_million DESC
+  )
+/* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.vaccinations_vs_outcomes"} */;
+[0m12:05:34.623629 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.550 seconds
+[0m12:05:34.627137 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67bb437c-a9b1-42e6-a571-e21f63d5b73f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403FB95180>]}
+[0m12:05:34.627728 [info ] [Thread-1 (]: 2 of 2 OK created sql view model dbt_analytics.vaccinations_vs_outcomes ........ [[32mSUCCESS 1[0m in 0.57s]
+[0m12:05:34.628635 [debug] [Thread-1 (]: Finished running node model.dbt_project.vaccinations_vs_outcomes
+[0m12:05:34.630068 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:05:34.630537 [debug] [MainThread]: Connection 'list_COVID_DB' was left open.
+[0m12:05:34.630778 [debug] [MainThread]: On list_COVID_DB: Close
+[0m12:05:34.718664 [debug] [MainThread]: Connection 'list_COVID_DB_dbt_analytics' was left open.
+[0m12:05:34.719087 [debug] [MainThread]: On list_COVID_DB_dbt_analytics: Close
+[0m12:05:34.816836 [debug] [MainThread]: Connection 'model.dbt_project.vaccinations_vs_outcomes' was left open.
+[0m12:05:34.817235 [debug] [MainThread]: On model.dbt_project.vaccinations_vs_outcomes: Close
+[0m12:05:34.884992 [info ] [MainThread]: 
+[0m12:05:34.885982 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 15.85 seconds (15.85s).
+[0m12:05:34.886900 [debug] [MainThread]: Command end result
+[0m12:05:34.916386 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\dbt_Project\target\manifest.json
+[0m12:05:34.919582 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\dbt_Project\target\semantic_manifest.json
+[0m12:05:34.930291 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\h.boulaayad\Documents\BachelorArbeit\ETL_COVID19\dbt_Project\target\run_results.json
+[0m12:05:34.930827 [info ] [MainThread]: 
+[0m12:05:34.931384 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:05:34.931928 [info ] [MainThread]: 
+[0m12:05:34.932528 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m12:05:34.933858 [debug] [MainThread]: Command `dbt run` succeeded at 12:05:34.933691 after 24.82 seconds
+[0m12:05:34.934306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403FAFF750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002403FA41EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002402B6676D0>]}
+[0m12:05:34.934682 [debug] [MainThread]: Flushing usage events
+[0m12:05:35.430629 [debug] [MainThread]: An error was encountered while trying to flush usage events

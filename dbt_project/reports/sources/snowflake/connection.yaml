@@ -1,7 +1,0 @@
-type: snowflake
-account: we07764.eu-central-1
-user: HICHAMBOU
-password: Slthishamaayda123#
-warehouse: DBT_WH
-database: COVID_DB
-schema: dbt_analytics   

@@ -1,6 +1,7 @@
 
-.env
-*.yml
-*.yaml
+target/
+dbt_packages/
 logs/
+.env
 node_modules/
+
